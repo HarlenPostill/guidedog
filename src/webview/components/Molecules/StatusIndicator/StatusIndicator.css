@@ -1,0 +1,87 @@
+:root {
+  background-color: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; /* Space out items */
+  background-color: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+  padding: 10px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%; 
+  max-width: 800px; 
+  height: 80%; 
+  box-sizing: border-box; 
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.status {
+  display: flex;
+  align-items: center; 
+  margin-left: 15px;
+}
+
+.paw-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.paw-icon img {
+  height: 20px;
+  width: 20px;
+}
+
+
+/* Define color classes for different statuses */
+.perceivable .status {
+  color: #FFF568; 
+}
+
+.operable .status {
+  color: #FDA1A2; 
+}
+
+.understandable .status {
+  color: #FF9E68; 
+}
+
+.critical .status {
+  color: #FF6D6D; 
+}
+
+.last-updated {
+  color: var(--vscode-editor-foreground);
+  margin-left: 15px; 
+  margin-top: 7px;
+  display: flex; 
+}
+
+.last-updated span {
+  color: var(--vscode-textLink-foreground);
+  margin-left: 5px; 
+}
+
+.refresh-icon {
+  color: var(--vscode-icon-foreground);
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.refresh-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: filter 0.2s ease; /* Smooth transition */
+}
+
+.refresh-button:hover {
+  filter: brightness(0.8); /* Darkens the icon */
+}
